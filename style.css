@@ -1,0 +1,22 @@
+a{
+            color: blue;
+            text-decoration: none;
+        }
+        body{
+            max-width: 50em;
+            margin: 0 auto;
+            text-align: center;
+            background-color: beige;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+            color: firebrick;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .nav a{
+            color: blue;
+        }
+        .rav a{
+            color: blue;
+        }
