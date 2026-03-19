@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cookie clicker</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="rav">
@@ -12,12 +13,29 @@
     <a href="kontakt.html">Kontakt</a>
     </div>
 
-    <h1>Website</h1>
-    <p>Uuem, targem, parem!</p>
+    <script>
+        window.onload = function() {
+        let algne = document.getElementById("clicks");
+        algne.innerHTML = localStorage.getItem("test");
+        }
+
+        function counter(){
+            let algne = document.getElementById("clicks");
+            let tulemus = Number(algne.innerHTML) + 1;
+            algne.innerHTML = tulemus;
+        
+
+            localStorage.setItem("test",tulemus);
+        }
+    </script>
+
+    <h1>Cookie clicker</h1>
+    <p>Uuem, kiirem, parem!</p>
     <br>
     <a href="https://www.ekool.eu/">Vajuta</a>
     <hr>
-    <img src="pildid/black-business-man-thumb-up-happy-giving-modern-office-67668710.webp" alt="pilt1" style="width: 700px;">
+    <h2>Clicks: <span id="clicks">0</span></h2>
+    <img src="pildid/Cookie-New-01-scaled.jpg" alt="pilt1" style="width: 700px;" onclick="counter()">
     <hr>
 </body>
 </html>
